@@ -1,4 +1,4 @@
-function [fig,hp1,hc1,time]=NC_Slab(FileName,lonr,latr,lonN,latN,TimeN,VarN)
+function [fig,hp1,hc1,time]=NC_Slab(FileName,lonr,latr,lonN,latN,TimeN,varN)
 % [fig,hp1,hc1,time]=NC_Slab(FileName,lonr,latr,lonN,latN,TimeN,VarN)
 % FileName = 'G:\GHRSST\2016\GHRSST_20160320.nc';
 % lonr = [105 120];
