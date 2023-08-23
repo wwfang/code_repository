@@ -1,4 +1,4 @@
-function [fig,hp1,hc1,time]=NC_Slab(FileName,lonr,latr,lonN,latN,TimeN,varN)
+function [fig,hp1,hc1,time]=NC_Slab(FileName,lonr,latr,lonN,latN,TimeN,varN,depind)
 % [fig,hp1,hc1,time]=NC_Slab(FileName,lonr,latr,lonN,latN,TimeN,VarN)
 % FileName = 'G:\GHRSST\2016\GHRSST_20160320.nc';
 % lonr = [105 120];
@@ -7,12 +7,12 @@ function [fig,hp1,hc1,time]=NC_Slab(FileName,lonr,latr,lonN,latN,TimeN,varN)
 % latN = 'lat';
 % TimeN = 'time';
 % varN = 'analysed_sst';
-
+% depind = 1; % Choose the layer in depth
 lon = ncread(FileName,lonN);
 lat = ncread(FileName,latN);
 time = ncread(FileName,TimeN);
 var = ncread(FileName,varN);
-
+var = var(:,:,depind);
 if isvector(lon)
     lonLen = length(lon);
     latLen = length(lat);
