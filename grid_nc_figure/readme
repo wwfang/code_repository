@@ -1,0 +1,1 @@
+NC_Slab.m : do a figure with gridded netCDF file, the variable could be 2D or 3D. Make sure the third dimension of variable is along depth or sigma coordinate.
