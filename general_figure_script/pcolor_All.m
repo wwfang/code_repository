@@ -1,4 +1,4 @@
-function [fig,hg,hc]=pcolor_All(xx,yy,zz,figSW,figout,clmp)
+function [fig,hg,hc,xx,yy]=pcolor_All(xx,yy,zz,figSW,figout,clmp)
 % [fig,hg,hc]=pcolor_All(xx,yy,zz,figSW,figout,clmp)
 % xx : vector or matrix for meshgrid(x)
 % yy : vector or matrix for meshgrid(y)
