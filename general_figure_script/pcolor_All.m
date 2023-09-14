@@ -20,7 +20,7 @@ if isvector(yy)
     cc = setdiff(size(zz),length(yy));
     yy = repmat(yy,[1 cc]);
 end
-if size(yy,1) ~= size(yy,1)
+if size(yy,1) ~= size(zz,1)
     yy = yy';
 end
 
