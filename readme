@@ -1,1 +1,2 @@
 Sta_map : A simple scripts for show some stations location in a map.
+calculateDistances : calculating the distance from given point(lon,lat) to a 2D lon/lat grid
