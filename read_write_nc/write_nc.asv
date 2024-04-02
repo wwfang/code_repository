@@ -46,7 +46,7 @@ for i = 1:num
     netcdf.endDef(ncid)
 %     disp(variable{i}.value);
     netcdf.putVar(ncid,varid,variable{i}.value);
-    disp(['done processing variable : ', variable{i}.name])
+    disp(['processing variable : ', ]
 end
 % netcdf.endDef(ncid)
 netcdf.close(ncid)
